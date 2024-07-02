@@ -1,0 +1,115 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.gallery-container {
+    position: relative;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.gallery-header {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.slick-prev, .slick-next {
+    z-index: 1;
+    color: #333;
+}
+
+.gallery-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.gallery-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.gallery-image-container, .gallery-description-container {
+    flex: 1;
+    padding: 30px;
+}
+
+.gallery-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    border-radius: 20px;
+}
+
+.gallery-description-container {
+    text-align: left;
+    padding-left: 40px;
+}
+
+.gallery-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.gallery-name {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.gallery-description {
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+
+    .gallery-header {
+        font-size: 32px;
+    }
+
+    .gallery-image {
+        max-width: 400px;
+    }
+
+    .gallery-text {
+        font-size: 20px;
+    }
+
+    .gallery-name {
+        font-size: 18px;
+    }
+
+    .gallery-description {
+        font-size: 16px;
+    }
+
+
+    .gallery-content {
+        flex-direction: column;
+    }
+
+    .gallery-image-container, .gallery-description-container {
+        padding: 20px;
+    }
+}

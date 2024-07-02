@@ -1,0 +1,167 @@
+.about-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+.about-photo,
+.about-content {
+    flex: 1;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    height: 90vh;
+}
+
+.about-header {
+    line-height: 1.1;
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+}
+
+.trainer-name {
+    color: #ff7f50;
+    white-space: nowrap;
+}
+
+.about-description {
+    padding: 10px;
+}
+
+.about-text {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    border-left: 4px solid #ff7f50;
+    font-style: italic;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.achievements-list {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+.achievements-list li {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.achievements-list li::before {
+    content: "🔸";
+    margin-right: 10px;
+    color: #ff7f50;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .about-photo,
+    .about-content {
+        width: 100%;
+        margin: 10px 0;
+        height: auto;
+    }
+
+    .about-photo img {
+        height: 60vh;
+    }
+
+    .about-content {
+        height: auto;
+        padding: 20px;
+    }
+
+    .about-header {
+        font-size: 28px;
+    }
+
+    .about-text,
+    .achievements-list li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .about-photo,
+    .about-content {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+
+    .about-photo {
+        height: 50vh;
+    }
+
+    .about-content {
+        height: auto;
+        padding: 30px;
+    }
+
+    .about-header {
+        font-size: 30px;
+    }
+
+    .about-text,
+    .achievements-list li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-header {
+        font-size: 24px;
+    }
+
+    .about-text,
+    .achievements-list li {
+        font-size: 14px;
+    }
+}

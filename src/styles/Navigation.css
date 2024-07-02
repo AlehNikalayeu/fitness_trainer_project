@@ -1,0 +1,131 @@
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.burger-icon {
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+    z-index: 2;
+}
+
+.burger-icon .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.burger-icon.open .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.burger-icon.open .line:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-icon.open .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.nav-links li {
+    float: left;
+}
+
+.nav-links li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: #ff6347;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Media queries for burger-menu */
+@media (max-width: 768px) {
+    .burger-icon {
+        display: block;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        max-height: 0;
+        transition: max-height 0.5s ease-out;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px;
+    }
+
+    .nav-links.open {
+        display: flex;
+        max-height: 310px;
+    }
+
+    .nav-links.open li {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    .nav-links.open li {
+        animation: slideIn 0.3s forwards;
+    }
+
+    .nav-links.open li:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+
+    .nav-links.open li:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    .nav-links.open li:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+
+    .nav-links.open li:nth-child(4) {
+        animation-delay: 0.4s;
+    }
+
+    .nav-links.open li:nth-child(5) {
+        animation-delay: 0.5s;
+    }
+
+    .nav-links.open li:nth-child(6) {
+        animation-delay: 0.6s;
+    }
+
+    @keyframes slideIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
