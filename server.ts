@@ -56,10 +56,10 @@ app.post('/send', (req: Request, res: Response) => {
     });
 });
 
-// Обслуживание статических файлов из папки build
+// Serve static files from the build directory
 app.use(express.static(path.join(__dirname, 'build')));
 
-// Обработка всех остальных маршрутов, чтобы вернуть index.html
+// Handle all other routes to return index.html
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
