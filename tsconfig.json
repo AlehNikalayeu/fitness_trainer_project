@@ -23,6 +23,6 @@
   "include": [
     "src",
     "context",
-    "server.ts"
+    "api/server.ts"
   ]
 }

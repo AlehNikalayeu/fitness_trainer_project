@@ -38,7 +38,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "ts-node server.ts",
+    "server": "ts-node api/server.ts",
     "start-serve": "serve -s build",
     "build-server": "tsc"
   },
@@ -67,6 +67,7 @@
     "@types/redux": "^3.6.0",
     "@types/redux-thunk": "^2.1.0",
     "@types/webpack-env": "^1.18.5",
+    "@vercel/node": "^3.2.0",
     "css-loader": "^7.1.2",
     "http-server": "^14.1.1",
     "serve": "^14.2.3",
