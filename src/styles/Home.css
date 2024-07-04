@@ -96,13 +96,13 @@
     .home-button {
         width: 60%;
         padding: 12px;
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
 @media (max-width: 480px) {
     .home-header {
-        top: 60%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }

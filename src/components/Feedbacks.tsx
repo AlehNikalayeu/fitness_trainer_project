@@ -45,7 +45,7 @@ const Feedbacks: React.FC = () => {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 2000,
+        speed: 3000,
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
