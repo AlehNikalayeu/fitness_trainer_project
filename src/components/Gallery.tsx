@@ -15,11 +15,11 @@ const Gallery: React.FC = () => {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 1000,
+        speed: 2000,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,
     };
 
     return (

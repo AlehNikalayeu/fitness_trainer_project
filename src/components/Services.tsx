@@ -1,8 +1,8 @@
-import React, {useEffect, useContext} from "react";
+import React, { useEffect, useContext } from "react";
 import Slider from "react-slick";
-import {Link as ScrollLink} from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 import "../styles/Services.css";
-import {AppContext} from '../context/AppContext';
+import { AppContext } from '../context/AppContext';
 
 const Services: React.FC = () => {
     const context = useContext(AppContext);
@@ -11,7 +11,7 @@ const Services: React.FC = () => {
         throw new Error('Services must be used within an AppProvider');
     }
 
-    const {state, dispatch} = context;
+    const { state, dispatch } = context;
 
     useEffect(() => {
         dispatch({
@@ -87,8 +87,7 @@ const Services: React.FC = () => {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
+        autoplay: false,
         responsive: [
             {
                 breakpoint: 768,

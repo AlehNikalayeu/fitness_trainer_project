@@ -183,6 +183,11 @@
     .form-input, .form-textarea, .form-button {
         max-width: 100%;
     }
+
+
+    .contact-item {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 480px) {
